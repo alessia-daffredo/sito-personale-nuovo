@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+header {
+  background-color: #1e293b;
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav a {
+  color: #0f172a;
+  background-color: #38bdf8;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  background-color: #64748b;
+  color: #f1f5f9;
+}
+.profile-photo {
+  width: 200px;
+  border-radius: 12px;
+  border: 2px solid #38bdf8;
+  margin-bottom: 1em;
+}
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input,
+form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+form button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+form button:hover {
+  background-color: #64748b;
+}
+ul {
+  padding-left: 1.2rem;
+}
+ul li {
+  margin-bottom: 8px;
+}
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+/* Sidebar */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+/* Icona hamburger */
+#main {
+  display: none;
+}
+@media (max-width: 768px) {
+  #main {
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    z-index: 1000;
+    padding: 10px;
+  }
+  nav {
+    display: none;
+  }
+}
