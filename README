@@ -1,0 +1,26 @@
+# Personal Website - Alessia Daffredo
+
+Welcome to my personal website!  
+This is a simple responsive site created with HTML, CSS, Bootstrap and LESS as part of my Full Stack Web Developer course at Start2Impact.
+
+## 🔍 Features
+
+- Homepage introduction
+- About Me section with personal photo
+- Curriculum Vitae page
+- Contact form
+- Social media links (LinkedIn, GitHub)
+- Responsive layout (mobile-friendly)
+- Favicon and Open Graph meta tags
+- Organized assets structure
+- LESS preprocessor for custom styles
+
+## 🌐 Technologies Used
+
+- HTML5
+- CSS3 / LESS
+- Bootstrap 5
+- Git & GitHub
+
+## 📁 Project Structure
+
