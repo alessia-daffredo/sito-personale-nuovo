@@ -6,11 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  const sidenav =
+  document.querySelector(".sidenav");
+  if (sidenav) {
+    sidenav.style.width = "250px"; 
+  }
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  const sidenav = 
+  document.querySelector(".sidenav");
+  if (sidenav) {
+    sidenav.style.width = "0"; 
+  }
 }
