@@ -1,29 +1,26 @@
-function openNav() {
-  const sidenav = document.querySelector(".sidenav");
-  if (sidenav) {
+document.addEventListener("DOMContentLoaded", function () {
+  const sidenav = document.getElementById("mySidenav");
+  const menuIcon = document.querySelector(".menu-icon");
+  const closeBtn = document.querySelector(".closebtn");
+  const links = document.querySelectorAll(".sidenav a");
+
+  function openNav() {
     sidenav.style.width = "250px";
   }
-}
 
-function closeNav() {
-  const sidenav = document.querySelector(".sidenav");
-  if (sidenav) {
+  function closeNav() {
     sidenav.style.width = "0";
   }
-}
 
-document.addEventListener("DOMContentLoaded", () => {
-  const menuIcon = document.querySelector(".menu-icon");
   if (menuIcon) {
     menuIcon.addEventListener("click", openNav);
   }
 
-  const closeBtn = document.querySelector(".closebtn");
   if (closeBtn) {
     closeBtn.addEventListener("click", closeNav);
   }
 
-  document.querySelectorAll(".sidenav a").forEach(link => {
+  links.forEach(link => {
     link.addEventListener("click", closeNav);
   });
 });
